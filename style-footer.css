@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@500&display=swap');
+.copy{
+    margin:0 auto;
+    margin-top:1vw;
+    padding: 0.2vw;
+    text-align: center;
+    background-image: linear-gradient(to right, #25aec0, #7BD5E0);
+    font-size:1vw;
+}
+.rodape{
+    background-image: linear-gradient(-45deg ,#4ecb5c,10%,#000);
+    height: 500px;
+    margin-bottom: -2vh
+}
+.rodape img{
+    width: 26vw;
+    position: relative;
+    top:  183px;
+    filter: drop-shadow(1px 1px 1px white);
+    display: inline;
+    
+}
+.descricao-footer{
+    width: 52vw;
+    position: relative;
+    bottom: 30vh;
+    margin: 0 auto;
+    color:#fff;
+    text-align: center;
+}
+.qr{
+    position: relative;
+    bottom: 150px;
+}
+.qrcode{
+    max-width: 7vw; 
+    border: 5px solid #4ecb5c;
+    padding: 1%;
+
+}
+.qrremovido{
+    text-transform: uppercase;
+    font-size: 1.7rem;
+    font-weight: bold;
+    ont-family: 'Yanone Kaffeesatz', sans-serif;
+}
+.descricao-footer h6{
+    font-size: 2.1rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    background: -webkit-linear-gradient(left,#fff, #4ecb5c);
+    background: linear-gradient(to right,#fff,#4ecb5c);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: drop-shadow(1px 1px 6px black);
+    margin-bottom: 3vh;
+}
+.descricao-footer p{
+    font-size: 1.9rem;
+    text-transform: uppercase;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    line-height: 6vh;
+    font-weight: bold;
+    background: -webkit-linear-gradient(left,#fff, #4ecb5c);
+    background: linear-gradient(to right,#fff,#4ecb5c);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: drop-shadow(1px 1px 6px black);
+}
+@media(max-width:1280px){
+    .rodape{
+        background-image: linear-gradient(-45deg ,#4ecb5c,10%,#000);
+        height: 390px;
+        margin-bottom: -2vh
+    }
+    .descricao-footer p{
+        font-size: 1.4rem;
+        text-transform: uppercase;
+        font-family: 'Yanone Kaffeesatz', sans-serif;
+        line-height: 6vh;
+        font-weight: bold;
+        background: -webkit-linear-gradient(left,#fff, #4ecb5c);
+        background: linear-gradient(to right,#fff,#4ecb5c);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        filter: drop-shadow(1px 1px 6px black);
+    }
+    .rodape img{
+        width: 26vw;
+        position: relative;
+        top:147px;
+        filter: drop-shadow(1px 1px 1px white);
+    }
+    .qr{
+        position: relative;
+        bottom: 18vh;
+    }
+    .descricao-footer{
+            width: 52vw;
+            position: relative;
+            bottom: 25vh;
+            margin: 0 auto;
+            color:#fff;
+            text-align: center;
+    }
+}
+@media(max-width: 480px){
+    .rodape img, .qr, .qrremovido,.copy{
+        display: none;
+    }
+    .rodape{
+        background-image: linear-gradient(-45deg ,#4ecb5c,10%,#000);
+        height: 250px;
+        margin-bottom: -2vh
+    }
+    .descricao-footer{
+        width: 85vw;
+        position: relative;
+        top: 50px;
+        margin: 0 auto;
+        color:#fff;
+        text-align: center;
+}       
+    .descricao-footer h6{
+        font-size: 23px;
+        text-transform: uppercase;
+        font-weight: bold;
+        background: -webkit-linear-gradient(left,#fff, #4ecb5c);
+        background: linear-gradient(to right,#fff,#4ecb5c);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        filter: drop-shadow(1px 1px 6px black);
+        margin-bottom: 3vh;
+}
+.descricao-footer p{
+        font-size: 20px;
+        text-transform: uppercase;
+        font-family: 'Yanone Kaffeesatz', sans-serif;
+        line-height: 4vh;
+        font-weight: bold;
+        background: -webkit-linear-gradient(left,#fff, #4ecb5c);
+        background: linear-gradient(to right,#fff,#4ecb5c);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        filter: drop-shadow(1px 1px 6px black);
+}
+                
+            
+}
+

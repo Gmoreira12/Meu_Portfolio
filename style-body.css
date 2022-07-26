@@ -1,0 +1,504 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+html{
+    scroll-behavior: smooth;
+}
+/*-----classes gerais---------*/
+.negrito{
+    font-weight: bold;
+}
+.textoazul{
+    text-decoration: underline #7BD5E0 3px;
+    margin-bottom: 5px;
+    font-weight: none;
+    
+}
+/*-----classes gerais---------*/
+.video, .logo-celular{
+    display: none;
+}
+.bgvideo{
+    background-image: url(Videos/bgcelular.mp4);
+}
+.minha-foto{
+    width:34vw;   
+    position:relative;
+    top: 3px;
+    margin-right: 10px;
+}
+.minha-descricao{
+    margin-left: 80px;
+    margin-top: 60px;
+    background-image:linear-gradient(to right,  #b8dada,#4ac0cf);
+    filter: drop-shadow(1px 1px 2px rgb(224, 224, 224));
+    padding: 20px;
+    border-radius: 20px;
+    animation: float 3s ease-in-out infinite;
+}
+@keyframes float{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-12px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+#boasvidas{
+    font-size: 1.5vw;
+    font-family:'Times New Roman', Times, serif;
+    color: #463731;
+    text-shadow:1px 1px 1px rgb(240, 235, 235);
+}
+.nome{
+    font-size: 2.6vw;
+    margin: 1vw 0px 0px 0px;
+    color:rgb(54, 53, 53);
+    text-shadow:1px 1px 1px rgb(240, 235, 235);
+    text-transform: uppercase;
+}
+/*
+.digitando{
+    animation: digitando 5s steps(25), blink .4s infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid;
+}
+@keyframes digitando{
+    from {
+        width: 0;
+    }
+}
+@keyframes blink{
+    40%{
+        border-color: rgba(255,255,255,0.2);
+    }
+}*/
+#objetivo, #nivel{
+    font-size: 1.8vw;
+    margin:2vw 0;
+    color:rgb(54, 53, 53);
+    text-transform:capitalize;
+    text-shadow:1px 1px 1px rgb(219, 207, 207);
+}
+.titulo-redes{
+    color:rgb(54, 53, 53);
+    text-transform:capitalize;
+    text-shadow:1px 1px 1px rgb(219, 207, 207);
+    font-weight: bold;
+    font-size: 1.2vw;
+}
+.redes{
+    display: flex;
+    align-items: center;
+}
+.tituloredes{
+    font-weight: bold;
+    font-size: 1.2vw;
+    background-color: #463731;
+    padding: 10px;
+}
+.img-icone{
+    max-width: 2vw;
+    padding:10px 15px;
+    align-items: center;
+    margin-bottom: 1vh;
+    
+}
+.banner-principal{
+    background-color:#7bd5e0;
+    border-radius: 0 0 20px 20px;
+    border-bottom: 1px solid #7e7e7e;
+    
+    
+}
+.conteudo-banner{
+    display: flex;
+    justify-content: space-around;
+    flex-direction:row-reverse;
+    align-items: center;
+    
+}
+.conteudo-banner h2, a{
+    font-size: 1vw;
+}
+.whatsapp img{
+    width:4vw;
+    height: 4vw;
+}
+.whatsapp{
+    position:fixed;
+    bottom: 3vw;
+    left: 93vw;
+    z-index:9999999;
+    filter:drop-shadow(1px 1px 2px gray);
+}
+.whatsapp:hover{
+    filter:drop-shadow(1px 1px 3px rgb(235, 233, 233));
+    transition: .50s ease-in-out;
+}
+/*--------Conhecimentos------*/
+.conhecimentos{
+    margin: 5px auto;
+    text-align: center;
+    background-image: linear-gradient(rgb(255, 255, 255),  rgb(211, 206, 206), rgb(255, 255, 255));
+    display: grid;
+}
+.conteiner-conhecimento{
+    display: flex;
+    justify-content: center;
+}
+.img-conhecimentos{
+    margin:2vw 2vw;
+    max-width: 10vw;
+    min-height: 10vw;
+    background-image: linear-gradient(#7BD5E0, #25aec0);
+    padding: 2px;
+    align-items: center;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow:  2px 2px 2px rgb(31, 30, 30);
+    filter:drop-shadow(1px 1px 1px rgb(99, 97, 97));
+    box-sizing: border-box;
+    text-align: center;
+    filter: contrast(0.8);
+}
+.img-conhecimentos:hover{
+    margin: 2vw 2vw;
+    max-width: 10vw;
+    min-height: 10vw;
+    background-image: linear-gradient(to right, #7BD5E0 , #ff824a);
+    padding: 2px;
+    align-items: center;
+    border-radius: 50%;
+    object-fit: cover;
+    filter: drop-shadow(2px 2px 6px rgb(107, 106, 106));
+    transition: .60s ease-in-out;
+    text-align: center;
+    box-sizing: border-box;
+    border: 1px solid rgb(160, 160, 160);
+}
+.shadow-img{
+   filter: drop-shadow(1px 1px 1px black);
+}
+.subtitulo{
+    font-size: 2vw;
+    border-radius: 20px;
+    background-image: linear-gradient(to right, #7BD5E0, #ff824a);
+    margin: 0 auto;
+    margin-top: 2.5vw;
+    margin-bottom: 2.5vw;
+    max-width: 25vw;
+    min-width: 12vw;
+    text-transform:uppercase;
+    text-align: center;
+    color:rgb(54, 53, 53);
+    padding: 0.5vw;
+    border: 0.3px solid rgb(104, 102, 102);
+    text-shadow:1px 1px 1px rgb(240, 235, 235);
+    border-radius: 10px 30px 10px 30px;
+}
+
+/*--------Conhecimentos------*/
+.sobremim{
+    background-image: url(imagens/background-sobremim.png);
+    background-repeat: repeat-x;
+    max-width: 100vw;
+    max-height: 72vh;
+    min-height: 25vh;
+    box-shadow: 2px 2px 3px gray;
+}
+.topico-sobremim{
+    max-width: 24vw;
+    min-width: 15vw;
+    max-height: 28vw;
+    min-height: 10vw;
+    padding: 1%;
+    background-image: linear-gradient(#c0b8b8, #cfd4d4);
+    border-radius: 1.5vw;
+    filter: drop-shadow(1px 1px 3px rgb(107, 106, 106));
+    text-align:left;
+    color:rgb(54, 53, 53);
+    display: inline-block;
+    margin-top: 2vw;
+    margin-left: 5.6vw;
+}
+.topico-sobremim:hover{
+    max-width: 24vw;
+    min-width: 15vw;
+    max-height: 28vw;
+    min-height: 10vw;
+    padding: 1%;
+    border-radius: 1.5vw;
+    filter: drop-shadow(3px 3px 6px rgb(107, 106, 106));
+    text-align:left;
+}
+li .icones-sobremim{
+    max-width: 2.2vw;
+    min-width: 1vw;
+    filter: drop-shadow(3px 3px 6px rgb(107, 106, 106));
+    align-items: center;
+}
+.subtitulo-h3{
+    text-align: center;
+    font-size:1.4vw;
+    text-shadow:1px 1px 1px rgb(240, 235, 235);
+    color:rgb(54, 53, 53);
+}
+.topico-sobremim li{
+    font-size: 1.2vw;
+    line-height: 5vw;
+    padding-left: 1vw;
+}
+.hobbys{
+    position: relative;
+    bottom:10vw; 
+}
+.curriculo{
+    max-width: 2vw;
+    min-width: 15vw;
+    max-height: 20vw;
+    min-height: 7.5vw;
+    padding: 1%;
+    background-image: linear-gradient(#c0b8b8, #cfd4d4);
+    border-radius: 1.5vw;
+    filter: drop-shadow(1px 1px 3px rgb(107, 106, 106));
+    text-align:left;
+    color:rgb(54, 53, 53);
+    position:relative;
+    left:59vw;
+    bottom: 9vw;
+    margin: 0;
+}
+.img-curriculo{
+    max-width: 20vw;
+    position: relative;
+    top:6.4vw;
+    left:1.8vw;
+    filter: drop-shadow(1px 1px 2px gray);
+    margin: 0;
+}
+
+.text-curriculo{
+    text-align: center;
+    font-size: 1.3vw;
+    text-decoration:none;
+    box-sizing: border-box;
+    margin-top: 5%;
+    margin:0 8%;
+    color:#463731;
+    line-height: 5.5vw;
+    filter: drop-shadow(1px 1px 2px rgb(107, 106, 106));
+    background-image: linear-gradient(to right,#3fcfe2,#7BD5E0);
+    padding: 4%;
+    border-radius: 1vw;
+}
+@media(max-width:1280px){
+    .banner-principal{
+        
+    }
+    .minha-foto{
+        
+    }
+    .conteudo-sobremim{
+        
+    }
+    
+}@media(max-width: 480px){
+    .minha-foto, .tituloredes, .links, .link-destaque{
+        display: none;
+    }
+     .conteudo-banner{
+        max-width:80vw;
+        min-width: 15vw;
+        max-height:110vh;
+        min-height: 110vh;
+        position: relative;
+        bottom: -1vw;
+        justify-content: center;
+        margin-right: 50px;
+        text-align: center;
+        padding: 5%;
+    }
+    .banner-principal{
+        background-image: linear-gradient(#7BD5E0, #7BD5E0);
+        max-width: 100%;
+        max-height: 545px;
+        min-height: 5vw;
+        border-radius: 0 0 2vw 2vw;
+        border-bottom:2px solid rgb(138, 135, 135);
+        box-sizing: border-box;
+        margin-top: -9px;
+    }
+    
+    #nome{
+        font-size: 3.5vw;
+        margin: 2vw 0;
+        color:rgb(54, 53, 53);
+        text-shadow:1px 1px 1px rgb(240, 235, 235);
+        text-transform: uppercase;
+    }
+    #objetivo, #nivel{
+        font-size: 3.2vw;
+        margin:2vw 0;
+        color:rgb(54, 53, 53);
+        text-transform:capitalize;
+        text-shadow:1px 1px 1px rgb(219, 207, 207);
+    }
+    .redes{
+        position: relative;
+        bottom: 3vw;
+        left:41vw;
+    }
+    
+    .img-icone{
+        max-width: 3vw;
+        padding-left:1.5vw;
+        align-items: center;
+        margin-bottom: 1vh;
+}
+    .img-whatsapp{
+        width:10vw;
+        height:10vw;
+    }
+
+    /*----Conhecimentos----*/
+    .conteiner-conhecimento{
+        display: grid;
+        grid-template-columns: 120px 120px;
+        justify-content: center;
+        grid-gap: 0 50px;
+
+    }
+    .img-conhecimentos{
+        margin:2vw 2vw;
+        max-width: 30vw;
+        min-height: 30vw;
+        background-image: linear-gradient(#7BD5E0, #25aec0);
+        padding: 2px;
+        align-items: center;
+        border-radius: 50%;
+        object-fit: cover;
+        box-shadow:  2px 2px 2px rgb(31, 30, 30);
+        filter:drop-shadow(1px 1px 1px rgb(99, 97, 97));
+        box-sizing: border-box;
+        text-align: center;
+        filter: contrast(0.8);
+    }
+    .img-conhecimentos:hover{
+        margin: 2vw 2vw;
+        max-width: 30vw;
+        min-height: 30vw;
+        background-image: linear-gradient(to right, #7BD5E0 , #ff824a);
+        padding: 2px;
+        align-items: center;
+        border-radius: 50%;
+        object-fit: cover;
+        filter: drop-shadow(2px 2px 6px rgb(107, 106, 106));
+        transition: .60s ease-in-out;
+        text-align: center;
+        box-sizing: border-box;
+        border: 1px solid rgb(160, 160, 160);
+    }
+    .subtitulo{
+        font-size: 3vw;
+        border-radius: 20px;
+        background-image: linear-gradient(to right, #7BD5E0, #ff824a);
+        margin: 0 auto;
+        margin-top: 5.5vw;
+        margin-bottom: 2.5vw;
+        max-width: 25vw;
+        min-width: 12vw;
+        text-transform:uppercase;
+        text-align: center;
+        color:rgb(54, 53, 53);
+        padding: 0.5vw;
+        border: 0.3px solid rgb(104, 102, 102);
+        text-shadow:1px 1px 1px rgb(240, 235, 235);
+        border-radius: 10px 30px 10px 30px;
+        padding: 0 20px;
+    }
+    /*----Conhecimentos----*/
+    /*----Sobre Mim----*/
+    .conteudo-sobremim{
+        display: grid;
+        grid-template-columns: 120px 120px;
+        gap:60px;
+        place-items: center;
+        width: 100%;
+        margin-bottom: 30px;
+        margin-left:0px;
+    }
+    .topico-sobremim{
+        min-width: 35vw;
+        max-height: 30vh;
+        padding: 1%;
+        border-radius: 1.5vw;
+        filter: drop-shadow(2px 2px 3px rgb(107, 106, 106));
+        text-align:left;
+        margin-left:150px;
+        
+        
+    }
+    .topico-sobremim:hover{
+        min-width: 35vw;
+        max-height: 30vh;
+        padding: 1%;
+        border-radius: 1.5vw;
+        filter: drop-shadow(3px 3px 6px rgb(107, 106, 106));
+        text-align:left;
+        margin-left:150px;
+    }
+    li .icones-sobremim{
+        max-width: 3.2vw;
+        min-width: 1vw;
+        filter: drop-shadow(3px 3px 6px rgb(107, 106, 106));
+        align-items: center;
+    }
+    .topico-sobremim li{
+        font-size: 8px;
+        line-height: 40px;
+    }
+    .subtitulo-h3{
+        font-size: 10px;
+        margin-top: 5px;
+    }
+    .curriculo{
+        min-width: 35vw;
+        min-height: 17vh;
+        padding: 1%;
+        background-image: linear-gradient(#c0b8b8, #cfd4d4);
+        border-radius: 1.5vw;
+        filter: drop-shadow(1px 1px 3px rgb(107, 106, 106));
+        text-align:left;
+        color:rgb(54, 53, 53);
+        position:relative;
+        left:53vw;
+        bottom: 43vw;
+        margin: 0;
+    }
+    .text-curriculo{
+        text-align: center;
+        font-size: 1.3vw;
+        text-decoration:none;
+        box-sizing: border-box;
+        margin-top: 5%;
+        margin:0 8%;
+        color:#463731;
+        line-height: 5.5vw;
+        filter: drop-shadow(1px 1px 2px rgb(107, 106, 106));
+        background-image: linear-gradient(to right,#3fcfe2,#7BD5E0);
+        padding: 4%;
+        border-radius: 1vw;
+    }
+    .img-curriculo{
+        position: absolute;
+        left: 300px;
+        top: 64px;
+        max-width: 25vw;
+    }
+    
+
+    /*----Sobre Mim----*/
+}
