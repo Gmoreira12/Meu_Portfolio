@@ -1,0 +1,109 @@
+html{
+    width: 100% ;
+}
+.conteudo{
+    justify-content: center;
+    text-align: center;
+}
+.google{
+    position: relative;
+    top: 6.5vw;
+}
+.pesquisa{
+    padding: 0 3vw;
+    width: 41vw;
+    height: 6.8vh;
+    border: none;
+    filter: drop-shadow(1px 2px 4px rgb(219, 219, 219));
+    border-radius: 2vw;
+    position: relative;
+    top:9vw;
+    left: 29vw;
+    font-size: 15px;
+    color:rgb(61, 59, 59);
+   
+}
+
+.lupa{
+    position: relative;
+    left: 30vw;
+    top:13vh
+}
+.microfone{
+    position:relative;
+    top:13.5vh;
+    left: 65vw;
+}
+.link-destaque{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+.link-destaque .bloco:hover{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    background-color: rgb(217, 223, 223);
+    border-radius: 5px;
+    transition: .2s ease-in-out;
+    box-sizing: border-box;
+}
+.link-destaque li{
+    margin: 9px 4px;
+}
+.img-destaques{
+    width: 50px;
+    height: 50px;
+    background-color: rgb(245, 245, 245);
+    padding: 15px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    filter: drop-shadow(1px 1px 1px rgb(253, 253, 253));
+}
+.conteiner-destaques{
+    position: relative;
+    top:110px;
+}
+.tamanho-destaque{
+    width: 10px;
+    display: inline;
+}
+.link-destaque div li a{
+    text-decoration: none;
+    color:rgb(82, 82, 82);
+    font-family:'Arial';
+    font-size: 15px;
+}
+.discricao{
+    
+    position: relative;
+    top:9vw;
+    text-align: center;
+    filter: drop-shadow(2px 2px 2px rgb(201, 201, 201));
+}
+.discricao picture a{
+    font-size: 13px;
+    text-decoration: none;
+    display: flex;
+    justify-items: center;
+    background-color: rgb(248, 252, 252);
+    padding: 8px 13px;
+    border-radius: 30px;
+    text-align: center;
+    font-family:'Arial';
+    color: #448dec;
+    font-weight: 100;
+    
+}
+.personalizar{
+    width: 189px;
+    margin: 0px 0px 0px 85vw;
+    position: relative;
+    bottom: 4px;
+}
+.img-personalizar{
+    margin-right:3px;
+}
