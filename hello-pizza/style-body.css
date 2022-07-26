@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@500&display=swap');
+.descricao{
+    margin: 9% 5%;
+    line-height: 3rem;
+    font-size: 2.2rem;
+    color: #fff;
+    text-transform: capitalize;
+    font-family:'Yanone Kaffeesatz', sans-serif;
+    text-shadow: 1px 1px 3px black;
+}
+body{
+    background-image: url(imagens/background-pizza.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    background-color:#131313;
+}
+.titulo{
+    position: relative;
+    top:21vw;
+    display: inline-block;
+    text-align: center;
+    font-size: 3rem;
+    color: #fff;
+    text-transform: capitalize;
+    text-shadow: 1px 1px 3px black;
+    text-transform: uppercase;  
+    display: flex;
+    justify-content: center;
+}
+.img-sabores{
+    filter:drop-shadow(3px 3px 5px rgb(0, 0, 0))
+}
+.sabores{
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 50vh;
+    text-align: center;
+}
+.tabelasabores{
+    position: relative;
+    top:60vh;
+    color:#fff;
+    font-size: 1.5rem;
+    text-align: center;
+    text-shadow: 1px 1px 3px rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    
+}
+.sim{
+    color:rgb(42, 160, 42)
+}
+.nao{
+    color:rgb(201, 49, 49)
+}
+th{
+    border: 1px solid black;
+    padding: 1vw;
+}
+td{
+    border: 1px solid black;
+    padding:  0.5vw 0;
+}
+caption{
+    margin-bottom: 2vh;
+    font-size: 2rem;
+    text-shadow: 1px 1px 3px rgb(0, 0, 0);
+}
+@media (max-width:480px){
+    .sabores{
+        display: inline-block;
+        justify-content: center;
+    }
+    .img-sabores{
+        filter:drop-shadow(3px 3px 5px rgb(0, 0, 0));
+    }
+    body{
+        background-image: url(imagens/background-pizza.png);
+        background-size: 570px;
+        background-repeat: no-repeat;
+        object-fit: cover;
+        background-color:#131313;
+        width: 100vw;
+    }
+    .sabores{
+        justify-content: center ;
+    }
+    .tabelasabores{
+        font-size: 15px;
+    }
+    .conteudo{
+        margin-left: 20px;
+    }
+}

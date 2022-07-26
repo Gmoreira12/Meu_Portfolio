@@ -1,0 +1,16 @@
+.rodape{
+    background-color: aqua;
+    position: relative;
+    top:80vh;
+    text-align: center; 
+    background-color: rgba(34, 33, 33, 0.6);
+}
+.rodape p{
+    font-size: 2rem;
+    padding: 2% 0;
+    color:#fff;
+    text-shadow: 1px 1px 3px black;
+}
+.direcionar{
+    background-color: black;
+}

@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family:'Yanone Kaffeesatz', sans-serif;
+}
+header{
+    background-color: rgba(34, 33, 33, 0.6);
+}
+.topo{
+    padding: 2% 3%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.links{
+    padding: 0 6%;
+}
+.links li{
+    display: inline-block;
+}
+.links li a{
+    padding: 0 6%;
+    margin-left: 4rem;
+    color:#fff;
+    font-size: 1.2rem;
+    text-decoration: none;
+    text-transform:uppercase;
+    font-weight: 500;
+    font-family:'Yanone Kaffeesatz', sans-serif;
+    text-shadow: 1px 1px 3px black;
+}
+.logo{
+    max-width: 20vw;
+}
+@media (max-width:480px){
+    .links li a{
+        padding: 0 6%;
+        margin-left: 3rem;
+        color:#fff;
+        font-size: 14px;
+        text-decoration: none;
+        text-transform:uppercase;
+        font-weight: 500;
+        font-family:'Yanone Kaffeesatz', sans-serif;
+        text-shadow: 1px 1px 3px black;
+    }
+    .logo{
+        max-width: 25vw;
+    }
+    .topo{
+        display: flex;
+        justify-items: center;
+    }
+}
